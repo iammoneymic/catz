@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat API App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        #progressBar {
+            height: 10px;
+            background-color: #4CAF50;
+            width: 0%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+    <label for="breedSelect">Select a Breed:</label>
+    <select id="breedSelect"></select>
+
+    <div id="infoDump"></div>
+
+    <div id="progressBar"></div>
+
+    <button id="getFavouritesBtn">Get Favorites</button>
+
     <script src="index.js"></script>
 </body>
 </html>
